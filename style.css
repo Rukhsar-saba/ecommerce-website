@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 5px 5px gainsboro;
+}
+.logo-container img {
+  width: 15rem;
+  height: 2.5rem;
+}
+.navbar-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-container a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.fa-bars {
+  display: none;
+}
+/* ----slider-header---- */
+.slider-header {
+  /* height: 39vw; */
+  display: flex;
+  padding: 2rem 5rem;
+  background-image: url(./images/slider-bg.jpg);
+  background-size: cover;
+  overflow-y: auto;
+}
+h1 {
+  font-size: 3.8rem;
+  padding-top: 5rem;
+}
+.heading-info-container {
+  width: 45%;
+}
+.heading-info-container span {
+  color: rgb(235, 68, 68);
+}
+.heading-info-container p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+.shop-btn {
+  background-color: rgb(235, 68, 68);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.shop-btn:hover {
+  background-color: rgb(216, 99, 99);
+}
+/* ----shop-with-us-design---- */
+.shop-with-us-container {
+  padding: 2rem 5rem;
+}
+.shop-with-us-heading {
+  font-size: 3.2rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.shop-with-us-list-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.shop-with-us-list {
+  width: 20rem;
+  height: 16rem;
+  background-color: rgb(26, 23, 43);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1rem;
+}
+.shop-with-us-list .fa-truck {
+  height: 4rem;
+  width: 4rem;
+  padding-top: 2rem;
+}
+.shop-with-us-list h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.shop-with-us-list p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+/* ----New Arivals-Design----- */
+.newarivals-container {
+  /* height: 35vw; */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-image: url(./images/arrival-bg.jpg);
+  background-size: cover;
+  overflow-y: auto;
+}
+/* ----Our Product Design---- */
+main {
+  padding: 1rem 5rem;
+}
+#id {
+  display: none;
+}
+main h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+main span {
+  color: rgb(235, 68, 68);
+}
+.our-product-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0rem;
+}
+.product-container {
+  width: 22rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0rem;
+  box-shadow: 2px 5px 5px 2px gainsboro;
+  position: relative;
+}
+.product-container img {
+  height: 13rem;
+  width: 12rem;
+  align-self: center;
+}
+.price-rating {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around;
+  align-items: center; */
+  padding: 1rem 2rem;
+}
+.price-rating p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+}
+/* ----Add New Product--- */
+.add-product-container {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid wheat;
+  box-shadow: 2px 5px 5px 2px rgb(245, 247, 248);
+  width: 25rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.edit-product-container {
+  height: 20rem;
+  height: 20rem;
+  box-shadow: 2px 5px 5px rgb(187, 185, 185);
+  text-align: center;
+  padding: 4rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; */
+}
+.edit-product-container input,
+.edit-product-container label {
+  width: 15rem;
+  font-size: 1rem;
+}
+/* ----make a popup design-- */
+.close {
+  display: none;
+}
+#display-msg {
+  font-size: 2rem;
+  color: black;
+}
+.edit-product img {
+  margin-bottom: 2rem;
+}
+.edit-product .product-container {
+  height: 30rem;
+}
+/* ----make a popup design-- */
+.add-product-container p,
+.add-product-container button {
+  margin: 1rem;
+}
+.add-product-container p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.add-product-container p input {
+  padding: 0.5rem 0.2rem;
+}
+.small-btn {
+  background-color: rgb(235, 68, 68);
+  padding: 0.5rem;
+  border: 0;
+  box-shadow: 1px 3px 5px 1px rgb(231, 103, 103);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.small-btn:hover {
+  background-color: rgb(248, 110, 110);
+}
+.delete-btn {
+  margin-left: 17rem;
+}
+.cancle-btn {
+  margin-left: 17rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    justify-content: space-evenly;
+  }
+  .logo-container img {
+    width: 8rem;
+    height: 2rem;
+  }
+  .navbar-container a {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
+  .heading-info-container p {
+    font-size: 1rem;
+    padding-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  header {
+    justify-content: space-between;
+  }
+  .navbar-container {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  .heading-info-container p {
+    font-size: 0.8rem;
+    padding-top: 0.6rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .heading-info-container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .heading-info-container p {
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+  }
+  .shop-with-us-container h2 {
+    font-size: 2.4rem;
+  }
+  .shop-with-us-list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shop-with-us-list {
+    width: 23rem;
+    height: 18rem;
+  }
+  .heading-info-container {
+    margin-left: 15rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .heading-info-container {
+    margin-left: 5rem;
+  }
+}

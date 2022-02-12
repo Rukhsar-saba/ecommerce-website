@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce Website</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="./images/logo.png" alt="logo" />
+    </div>
+    <div class="navbar-container">
+      <a href="#">Home</a>
+      <a href="#">Pages</a>
+      <a href="#">Product</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <i class="fa-solid fa-bars"></i>
+  </header>
+  <section class="slider-header">
+    <div class="heading-info-container">
+      <h1><span> Sale 20% Off </span>On Everything</h1>
+      <p>
+        Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
+        fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
+        molestias, veniam, vel architecto veritatis delectus repellat modi
+        impedit sequi.
+      </p>
+      <button class="shop-btn" type="submit">Shop Now</button>
+    </div>
+  </section>
+  <section class="shop-with-us-container">
+    <h2 class="shop-with-us-heading">Why Shop With Us</h2>
+    <div class="shop-with-us-list-container">
+      <div class="shop-with-us-list">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>variations of passages of Lorem Ipsum available</p>
+      </div>
+      <div class="shop-with-us-list">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>variations of passages of Lorem Ipsum available</p>
+      </div>
+      <div class="shop-with-us-list">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>variations of passages of Lorem Ipsum available</p>
+      </div>
+    </div>
+  </section>
+  <section class="newarivals-container">
+    <div class="heading-info-container">
+      <h1>#New Arivals</h1>
+      <p>
+        Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam
+        fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat
+        molestias.
+      </p>
+      <button class="shop-btn" type="submit">Shop Now</button>
+    </div>
+  </section>
+  <main id="product">
+    <div class="product-header">
+      <h1>Our <span> Products</span></h1>
+      <button id="add-newProduct" class="shop-btn">Add Product</button>
+      <button id="deleteProduct" class="shop-btn">Delete Product</button>
+      <button id="editProduct" class="shop-btn">Edit Product</button>
+      <div class="add-product-container-body close">
+        <div class="add-product-container close">
+          <p>
+            Price: <input type="text" id="price" placeholder="Enter Price" />
+          </p>
+          <p>
+            Title: <input type="text" id="title" placeholder="Enter Title" />
+          </p>
+          <p>
+            Image:
+            <input type="text" id="image" placeholder="Enter Image Link" />
+          </p>
+          <button id="add-product" class="shop-btn">Add Now</button>
+          <button id="close-btn" class="shop-btn">Close</button>
+        </div>
+      </div>
+      <div class="delete-product-container-body close">
+        <div class="delete-product-container add-product-container close">
+          <p>
+            Product Id:
+            <input
+            id="product-id"
+            type="text"
+            id="price"
+            placeholder="Enter Id"
+            />
+          </p>
+          <button id="delete-data-btn" class="shop-btn">Delete Item</button>
+          <button id="delete-close" class="shop-btn">Close</button>
+        </div>
+      </div>
+      <div class="edit-product-container-body close">
+        <div class="edit-product-container add-product-container close">
+          <p>
+            Product Id:
+            <input
+            id="item-id"
+            type="text"
+            id="price"
+            placeholder="Enter Id"
+            />
+          </p>
+          <button id="edit-data-btn" class="shop-btn">Edit Item</button>
+          <button id="edit-close" class="shop-btn">Close</button>
+        </div>
+      </div>
+      <!-- <div class="show-product close">
+       <div class="product-container">
+          <a href="" class="small-btn edit-btn">Edit</a>
+          <a href="" class="small-btn delete-btn">Delete</a>
+          <img src="./images/p1.png" alt="img" />
+          <div class="price-rating">
+            <p>Rs.</p>
+            <p>Rating <span>(count)</span></p>
+          </div>
+        </div> -->
+      </div>
+      <div class="edit-product close">
+        <div class="edit-product-container close">
+          <label for="image">Image: </label>
+          <input type="text" id="edit-image" name="image" placeholder="Enter Image Link"><br><br>
+          <label for="title">Title: </label>
+          <input type="text" id="edit-title" name="title" placeholder="Enter Title"><br><br>
+          <label for="price">Price: </label>
+          <input type="text" id="edit-price" name="price"  placeholder="Enter Price"><br><br>
+          
+          <button href="" class="small-btn save-btn">Save</button>
+          <button href="" class="small-btn cancle-btn">Cancle</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <span id="display-msg"></span>
+  
+  <div class="our-product-section">
+    <!-- <div class="product-container">
+      <a href="" class="update-btn">Update</a>
+      <img src="./images/p1.png" alt="img" />
+      <div class="price-rating">
+        <p>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+        <p>Rs. 100</p>
+      </div>
+    </div> -->
+  </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
